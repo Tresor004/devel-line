@@ -4,5 +4,7 @@ import { viteSingleFile } from 'vite-plugin-singlefile'
 
 // `npm run build` produit un unique fichier dist/index.html autonome
 export default defineConfig({
+  // Chemins relatifs : fonctionne à la racine (Vercel) comme sous /devel-line/ (GitHub Pages)
+  base: './',
   plugins: [react(), viteSingleFile()],
 })

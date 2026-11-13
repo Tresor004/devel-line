@@ -11,6 +11,11 @@ npm run dev      # http://localhost:5173
 npm run build    # produit dist/index.html, un fichier unique autonome
 ```
 
+## Déploiement
+
+- **GitHub Pages** : automatique à chaque push sur `main` via `.github/workflows/deploy.yml` (Settings → Pages → Source : GitHub Actions). URL : https://tresor004.github.io/devel-line/
+- **Vercel** : importer le dépôt, preset Vite, Node 22.
+
 ## Parcours jury (bouton « Parcours jury » en bas à droite)
 
 Les 10 étapes du §6 du cahier des charges, cochées automatiquement au fil de la démo.
